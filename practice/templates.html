@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Templates</title>
+    <style>
+        *{box-sizing:border-box;}
+        body{font-family:Arial, Helvetica, sans-serif;}
+        .header{background-color:black;text-align:center;padding:30px;height:200px;font-size:35px;color:white;}
+        .column{background-color:grey;text-align:center;color:white;font-size:35px;float:left;width:33.33%;height:150px;padding:10px;border:1px solid red;}
+        .row:after{content:"";display:table;clear:both;}
+        @media (max-width: 600px){.column{width:100%;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="row">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+            <div class="column">Column 3</div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

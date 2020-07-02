@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>The Code Review Form</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+     <link rel="stylesheet" href="index2.css">
+    <style>
+table, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <p id="para">ALI</p>
+    <p id="demo"></p>
+    <button name="test" onclick="window.alert('HI')">Alert</button>
+    <button name="table" onclick="create_table()">Create Table</button>
+    <button name="row" onclick="addrow()">Add Row</button>
+    <button name="row" onclick="change_bg()">Change BG</button>
+<script>
+<!--    document.getElementById("demo").innerHTML = 2+2;-->
+<!--    document.write('Ali'+6+22);-->
+<!--    window.alert("Welcome");-->
+<!--    console.log(2+2);-->
+function create_table()
+{
+    var body = document.getElementsByTagName("body")[0];
+    var table = document.createElement("table");
+    var tablebody = document.createElement("tbody");
+    for(var i = 0; i < 2; i++)
+    {
+        var row = document.createElement("tr");
+        for(var j = 0; j < 2; j++)
+        {
+            var col = document.createElement("td");
+            var cellText = document.createTextNode("cell in row "+i+", column "+j);
+            col.appendChild(cellText);
+            row.appendChild(col);
+        }
+        tablebody.appendChild(row);
+    }
+    table.appendChild(tablebody);
+    body.appendChild(table);
+    table.setAttribute("border", "2");
+}
+function addrow()
+{
+    var table = document.getElementById("myTable");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "NEW CELL1";
+  cell2.innerHTML = "NEW CELL2";
+}
+function change_bg(){
+    var para = document.getElementById('para');
+    para.style.background = "rgb(255,0,0)";
+    myText = document.createTextNode("HUSSAIN");
+    para.appendChild(myText);
+}
+</script>
+</body>
+</html>

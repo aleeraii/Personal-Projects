@@ -1,0 +1,45 @@
+LOCUS       HE805982                 413 bp    DNA     linear   VRL 15-MAY-2012
+DEFINITION  Hepatitis B virus partial X gene for HBx, isolate 11851.
+ACCESSION   HE805982
+VERSION     HE805982.1
+KEYWORDS    .
+SOURCE      Hepatitis B virus
+  ORGANISM  Hepatitis B virus
+            Viruses; Hepadnaviridae; Orthohepadnavirus.
+REFERENCE   1
+  AUTHORS   Tuteja,A., Siddique,A., Acharya,S.K. and Subodh,S.
+  TITLE     Mutation profiling of Hepatitis B virus strains circulating in
+            India
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 413)
+  AUTHORS   Tuteja,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-MAY-2012) to the INSDC. Research, Institute of
+            Molecular Medicine, 254, Okhla Phase 3, New Delhi, 110020, INDIA
+FEATURES             Location/Qualifiers
+     source          1..413
+                     /organism="Hepatitis B virus"
+                     /mol_type="genomic DNA"
+                     /isolate="11851"
+                     /db_xref="taxon:10407"
+                     /country="India"
+     gene            1..>413
+                     /gene="X"
+     CDS             1..>413
+                     /gene="X"
+                     /codon_start=1
+                     /product="HBx"
+                     /protein_id="CCH57386.1"
+                     /translation="MAARLYCQLDSSRDVLCLRPVGAESRGRPLARPLGAVSSPSPSA
+                     VPSDHGAHLSLRGLPVCAFSSXRSVCTSLHLCTLHGDHRERPSXPAQGLTKEDSWTLS
+                     NVNDRPRGLLQRLCDKRLGGVGGGDKVXXLCIRRL"
+ORIGIN      
+        1 atggctgcta ggttgtactg ccaactggat tcttcgcggg acgtcctttg tttacgtccc
+       61 gtcggcgctg aatcccgcgg acgacccctc gcgaggccgc ttggggctgt atcgtcccct
+      121 tctccgtctg ccgtaccgtc cgaccacggg gcgcacctct ctttacgcgg tctccccgtc
+      181 tgtgccttct catctngccg gtccgtgtgc acttcgcttc acctctgcac gttgcatgga
+      241 gaccaccgtg aacgcccatc argtcctgcc caaggtctta caaaagagga ctcttggact
+      301 ctcagcaatg tcaacgaccg acctagaggc ctacttcaaa gactgtgtga taaaagactg
+      361 ggaggagttg ggggaggaga taaggttaan ngtctttgta ttaggaggct gta
+//
+

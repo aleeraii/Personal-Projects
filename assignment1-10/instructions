@@ -1,0 +1,29 @@
+data - this is the list variable you used to store all your tuples into during your file read...
+MAKE SURE THIS VARIABLE NAME AGREES WITH YOUR CODE.
+results - this is the variable that you should have passed into the processInput() function as an argument.
+key = lambda... - this is something we don't have time to go into but is a powerful concept of Python.
+reverse = True - forces it to sort from largest to smallest
+# The following line sorts on text - column 1-3
+sortData = sorted(data, key = lambda r:(r[results]), reverse = True)
+
+# The following line print integer values - Column 4-11
+sortData = sorted(data, key = lambda r:(int(r[results])), reverse = True)
+
+for count in range(5):
+print(" {}| {} {}". format(count+1, sortData[count][1],
+sortData[count][inArg]))
+2 Things you need to think about:
+
+Since the first three items have a different sort function you have to determine what the value of results is and process properly.
+You MUST print the top 5 values from the sorted list....how are you gonna do that?
+Also:
+
+There are a some additional requirements:
+
+You can NOT sort on 'int' for the first 3 items - have said that 3 times now
+MAKE sure your function definitions are all located ABOVE your main code
+DO NOT mix your main code in between your functions
+Make sure you add a loop that will continue to ask the user for an input value until the user enters '12'
+Ensure that your code works for menu items 1-3 as well as 4-11, and 12
+Items 1, 2, and 3 are strings NOT integers, you must adjust your sort statement.
+You can test your code - below are two input values and the output you should see.
